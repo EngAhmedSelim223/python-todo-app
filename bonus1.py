@@ -1,4 +1,3 @@
-member = input("Enter a new member: ")
-file = open("members.txt", "a")
-file.write(member + "\n")
-file.close()
+filenames = ["1.Doc", "2.Report", "3.Presentation"]
+new_list = [f"{x.replace(".", "-")}.txt" for x in filenames]
+print(new_list)
