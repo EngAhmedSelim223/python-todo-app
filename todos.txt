@@ -1,2 +1,3 @@
 Clean
 Throw
+clean the room
