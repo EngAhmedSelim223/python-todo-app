@@ -1,30 +1,14 @@
-# password = input("Enter Password to check: ")
-# check_password = {}
-# if(len(password) <= 8):
-#     check_password['length'] = False
-# else:
-#     check_password['length'] = True
-    
-# is_digit = False
-# for c in password:
-#     if c.isdigit():
-#         is_digit = True
-# check_password['contains_digit'] = is_digit
+feet_inches = input("enter feet and inches: ")
 
-# is_upper = False
-# for c in password:
-#     if c.isupper():
-#         is_upper = True
-# check_password['contains_upper'] = is_upper
+def convert(feet_inches):
+    result = [x for x in feet_inches.strip().split(" ")]
+    feet = float(result[0])
+    inches = float(result[-1])
+    meters = feet * 0.3048 + inches * 0.0254
+    return meters
 
-# if(all(check_password.values())):
-#     print("Strong Password")
-# else:
-#     print("Weak Password")
-  
-width = float(input("Enter Width: "))
-height = float(input("Enter height: "))
-if width == height:
-    exit("This is a square not rectangle")
+result = convert(feet_inches= feet_inches)
+if result < 1:
+    print("Kid can't user slider")
 else:
-    print(f"the area is : {width * height}")
+    print("Kid can use slider")

@@ -1,9 +1,10 @@
 filename = "todos.txt"
+# NOTE: Get Todos
 def get_todos(filename):
     with open(filename, "r") as read_file:
         todos = read_file.readlines()
     return todos
-
+# NOTE: Update Todos
 def update_todos(filename, todos):
     with open(filename, "w") as write_file:
         write_file.writelines(todos)
