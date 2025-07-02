@@ -1,4 +1,6 @@
 from modules import functions as func
+import time
+print(f"It's {time.strftime("%b %d, %Y")}")
 todos = func.get_todos()
 
 while True:
