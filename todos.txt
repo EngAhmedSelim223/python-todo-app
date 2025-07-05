@@ -1,3 +1,4 @@
-throw the trash
+Buy Greocery
 Clean the room
-
+Study Python
+Learn about Data Engineering
