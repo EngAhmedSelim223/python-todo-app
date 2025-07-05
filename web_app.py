@@ -3,7 +3,7 @@ from modules import functions as func
 st.title("My to-do APP")
 st.subheader("Where you can manage your to-dos")
 todos = func.get_todos()
-
+st.set_page_config(layout = "wide")
 def add_todo():
     todo = st.session_state["new_todo"]
     todos.append(todo + "\n")
